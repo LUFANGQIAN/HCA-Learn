@@ -1,0 +1,38 @@
+.table-class {
+    width: auto;
+    height: auto;
+    margin:auto auto;
+}
+
+th {
+    width: 200px;
+    height: 40px;
+    background-color: green;
+    text-align: center;
+    line-height: 40px;
+    color: #ffffff;
+}
+
+
+
+table tr:nth-child(2n) {
+    width: 200px;
+    height: 30px;
+    background-color: #cbdbff;
+    text-align: center;
+    line-height: 30px;
+    color: black;
+}
+
+table tr:nth-child(2n+1) {
+    width: 200px;
+    height: 30px;
+    background-color: rgb(73, 206, 73);
+    text-align: center;
+    line-height: 30px;
+    color: black;
+}
+
+table {
+    border: 3px solid rgb(0, 62, 0);
+}
