@@ -1,7 +1,7 @@
 .table-class {
     width: auto;
     height: auto;
-    margin:auto auto;
+    margin: auto auto;
 }
 
 th {
@@ -11,6 +11,23 @@ th {
     text-align: center;
     line-height: 40px;
     color: #ffffff;
+    border: 3px solid rgb(0, 62, 0);
+}
+
+tr{
+    border: 3px solid rgb(0, 62, 0);
+
+}
+
+
+
+/* th:hover,td:hover{
+    background-color: #04ff00;
+} */
+
+
+td {
+    border: 3px solid rgb(0, 62, 0);
 }
 
 
@@ -33,6 +50,10 @@ table tr:nth-child(2n+1) {
     color: black;
 }
 
-table {
+/* table {
     border: 3px solid rgb(0, 62, 0);
+} */
+
+.table-class tr:hover {
+    background-color: #f5f5f5; /* 悬停时的背景颜色 */
 }

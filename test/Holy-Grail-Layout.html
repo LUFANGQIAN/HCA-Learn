@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>圣杯布局</title>
@@ -13,7 +14,8 @@
             flex-direction: column;
         }
 
-        header, footer {
+        header,
+        footer {
             background-color: #f5f5f5;
             text-align: center;
             padding: 20px;
@@ -37,17 +39,20 @@
         }
 
         .left-sidebar {
-            order: -1; /* 确保左侧边栏在最左边 */
+            order: -1;
+            /* 确保左侧边栏在最左边 */
         }
     </style>
 </head>
+
 <body>
-<header>Header</header>
-<div class="container">
-    <aside class="left-sidebar">Left Sidebar</aside>
-    <main>Main Content</main>
-    <aside class="right-sidebar">Right Sidebar</aside>
-</div>
-<footer>Footer</footer>
+    <header>Header</header>
+    <div class="container">
+        <aside class="left-sidebar">Left Sidebar</aside>
+        <main>Main Content</main>
+        <aside class="right-sidebar">Right Sidebar</aside>
+    </div>
+    <footer>Footer</footer>
 </body>
+
 </html>

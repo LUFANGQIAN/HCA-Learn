@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Font Awesome Icon Example</title>
+    <script src="./icon/iconfont.js"></script>
+    <link rel="stylesheet" href="./css/icon.css">
+    <style>
+        .icon {
+            width: 1em;
+            height: 1em;
+            vertical-align: -0.15em;
+            fill: currentColor; /* 确保fill属性继承currentColor */
+            overflow: hidden;
+        }
+
+        .luyou {
+            font-size: 200px;
+            color: brown; /* 设置颜色 */
+        }
+
+        /* 强制覆盖SVG内部的fill属性 */
+        .icon use {
+            fill: currentColor !important;
+        }
+    </style>
+</head>
+
+<body>
+    <svg class="icon luyou" aria-hidden="true">
+        <use xlink:href="#icon-kuandai"></use>
+    </svg>
+</body>
+
+</html>

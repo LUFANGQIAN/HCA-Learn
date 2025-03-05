@@ -1,0 +1,27 @@
+.test {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    display: block;
+    transition: all 1s;
+    cursor: url("../png/网.png"), auto;
+}
+
+.test:hover {
+    background-color: blue;
+    width: 300px;
+    height: 300px;
+    cursor: url("../png/网.png"), auto;
+}
+
+div {
+    margin-top: 50px;
+    width: 200px;
+    height: 200px;
+    background-color: red;
+
+}
+
+.cursor-diy {
+    cursor: url("../png/网.png"), auto;
+}

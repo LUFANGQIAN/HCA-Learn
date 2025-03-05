@@ -1,0 +1,98 @@
+body {
+    display: flex;
+    background-color: rgb(245, 246, 250);
+}
+
+.home {
+    width: 300px;
+    height: 100vh;
+    background-color: rgb(44, 62, 80);
+}
+
+.list-home {
+    flex: 1;
+    background-color: rgb(245, 246, 250);
+    margin: 20px;
+}
+
+h1 {
+    width: 260;
+    height: 90;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+    padding: 40px;
+    background-color: rgb(29, 34, 52);
+}
+
+
+.nav {
+    text-align: center;
+    color: antiquewhite;
+    margin: 10px;
+    font-size: 20px;
+    margin-top: 60px;
+}
+
+.nav a{
+    color: inherit; /* 使用父元素的颜色 */
+    text-decoration: none; 
+}
+
+.nav li {
+    margin: 30px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 5px;
+    line-height: 50px;
+    transition: all 1s;
+    border: 3px solid rgb(66, 91, 117);
+    cursor: pointer;
+}
+
+
+.nav li:hover{
+    font-size: 40px;
+    box-shadow: 0px 0px 15px rgba(220, 208, 208, 0.2);
+}
+
+
+.text-list {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+.text-list li {
+    width: auto;
+    height: 100px;
+    background-color: rgb(245, 246, 250);
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 0px 0px 15px rgba(35, 33, 33, 0.2);
+}
+
+.nav li:first-child {
+    margin: 30px;
+    margin-top: 0;
+}
+
+
+
+.text-list h2 {
+    font-size: 40px;
+}
+
+.text-list h3 {
+    font-size: 30px;
+}
+
+li div span{
+    font-size: 20px;
+    display: block;
+    margin:10px 0;
+}
