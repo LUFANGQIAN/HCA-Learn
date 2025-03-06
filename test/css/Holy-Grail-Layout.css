@@ -1,0 +1,40 @@
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    height: 20vh;
+
+    background-color: aqua;
+}
+
+main {
+    flex: 6;
+    background-color: rgb(250, 179, 87);
+    display: flex;
+}
+
+footer {
+    height: 20vh;
+
+    background-color: rgb(54, 210, 113);
+}
+
+.content {
+    min-height: 100vh;
+    flex: 6;
+}
+
+.content-left {
+    flex: 2;
+    height: auto;
+    background-color: rgb(31, 71, 215);
+}
+
+.content-right {
+    flex: 2;
+    height: auto;
+    background-color: rgb(255, 69, 144);
+
+}

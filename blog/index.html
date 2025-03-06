@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>按钮示例页面</title>
+    <style>
+        /* 全局样式 */
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f4f8; /* 舒适的背景颜色 */
+        }
+
+        /* 容器样式 */
+        .container {
+            text-align: center;
+        }
+
+        /* 按钮样式 */
+        .button {
+            display: inline-block;
+            padding: 15px 30px;
+            font-size: 18px;
+            color: white;
+            background-color: #007bff; /* 主按钮颜色 */
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 悬停时的效果 */
+        .button:hover {
+            background-color: #0056b3; /* 悬停时的颜色变化 */
+        }
+
+        /* 点击时的效果 */
+        .button:active {
+            transform: translateY(2px);
+            box-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+        }
+
+        /* 内部字体变大发光效果 */
+        .button span {
+            display: inline-block;
+            transition: transform 0.3s, text-shadow 0.3s;
+        }
+
+        .button:hover span {
+            transform: scale(1.2); /* 字体放大 */
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8); /* 发光效果 */
+        }
+
+        /* 按钮之间的间距 */
+        .button + .button {
+            margin-left: 20px;
+        }
+
+        /* 另一个按钮的不同颜色 */
+        .button-secondary {
+            background-color: #28a745; /* 第二个按钮的颜色 */
+        }
+
+        .button-secondary:hover {
+            background-color: #218838; /* 悬停时的颜色变化 */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <!-- 前往CMS按钮 -->
+    <a href="./paper/CMS.html" class="button">
+        <span>前往CMS</span>
+    </a>
+
+    <!-- 前往3D-BOX页面按钮 -->
+    <a href="./paper/3D-BOX.html" class="button button-secondary">
+        <span>前往3D-BOX页面</span>
+    </a>
+</div>
+
+</body>
+</html>
