@@ -27,6 +27,7 @@
             height: 200px;
             background-color: rgba(255, 0, 0, 0.7);
             border: 2px solid black;
+            animation: boom 500ms infinite;
         }
 
         .front {
@@ -56,6 +57,24 @@
         .container:hover .cube {
             transform: rotateX(720000deg) rotateY(720000deg);
             
+        }
+
+        @keyframes boom{
+            0%{
+                background-color: rgba(255, 0, 0, 0.7);
+            }
+            25%{
+                background-color: rgba(0, 0, 255, 0.7);
+            }
+            50%{
+                background-color: rgba(0, 255, 0, 0.7);
+            }
+            0%{
+                background-color: rgba(214, 24, 235, 0.7);
+            }
+            100%{
+                background-color: rgba(255, 0, 0, 0.7);
+            }
         }
     </style>
 </head>

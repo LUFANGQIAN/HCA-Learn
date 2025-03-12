@@ -1,76 +1,33 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        body {
-            perspective: value;
-            transform-style: preserve-3d;
+        body{
+            background-color: aquamarine;
         }
 
-        @keyframes niganma {
-            0% {
-                transform: rotate(0deg);
-                margin-top: 75vh;
-            }
-
-            50% {
-                transform: rotate(360deg);
-                
-                margin-top: 10vh;
-            }
-
-            100% {
-                transform: rotate(720deg);
-                margin-top: 75vh;
-            }
-        }
-
-        @keyframes xuanzhuan {
-            0% {
-
-                transform: rotateY(0deg) ;
-
-            }
-
-            50% {
-
-                transform: rotateY(720deg);
-            }
-
-            100% {
-
-                transform: rotateY(1440deg);
-            }
-
-        }
-
-        div {
-            border: 6px solid red;
+        div{
+            position: relative;
             width: 200px;
             height: 200px;
-            font-size: 50px;
-            line-height: 200px;
+            font-size: 40px;
+            background-color: blue;
+            color: white;
             text-align: center;
-            transition: all 1s;
-            border-radius: 50%;
-            margin: auto;
-            animation: niganma 3s infinite ease-in-out ,
-            xuanzhuan 15s infinite ;
-        }
-
-        div:hover {
-            animation-play-state: paused; /* 暂停 */
+            line-height: 200px;
+            left: 50vw;
+            top:50vh;
+            transform:translate(-50%,-50%);
         }
     </style>
 </head>
 
 <body>
-    <div>CSS</div>
-
+    <div>
+        你干嘛
+    </div>
 </body>
-
 </html>
