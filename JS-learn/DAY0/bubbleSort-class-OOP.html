@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>冒泡排序-OOP版</title>
+  <link rel="stylesheet" href="../Public_Css.css/reset.css">
+  <style>
+    div {
+      display: inline-block;
+      width: 300px;
+      padding: 5px 10px;
+      border: 1px solid pink;
+      margin: 2px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 2px rgba(255, 192, 203, .4);
+      background-color: rgba(255, 192, 203, .1);
+      text-align: center;
+      color: hotpink;
+    }
+  </style>
+</head>
+
+<body>
+  <script>
+    class testSort {
+
+      constructor() {
+        this.arr = [];
+      }
+
+      bubbleSort() {
+        let len = this.arr.length;
+        for (let i = 0; i < len; i++) {
+          for (let j = 0; j < len - 1 - i; j++) {
+            if (this.arr[j] > this.arr[j + 1]) {
+              let temp = this.arr[j];
+              this.arr[j] = this.arr[j + 1];
+              this.arr[j + 1] = temp;
+            }
+          }
+        }
+        document.write(`<div>排序之后的数组值为:${this.arr}</div>`)
+      }
+
+
+
+
+      getArr() {
+        let maximum;
+
+        maximum = prompt(`请输入要排序的元素个数`);
+        for (let i = 0; i < maximum; i++) {
+          let temp;
+          temp = prompt(`请输入第${i + 1}个元素`)
+          this.arr[i] = Number(temp);
+        }
+        document.write(`<div>刚刚输入的数组值为:${this.arr}</div>`)
+      }
+
+
+
+      takeSort() {
+        this.getArr()
+        this.bubbleSort()
+      }
+    }
+
+
+    function main() {
+      run1Srot = new testSort;
+      run1Srot.takeSort();
+
+      run2Srot = new testSort;
+      run2Srot.takeSort();
+    }
+
+    window.onload = main;
+
+
+  </script>
+
+<input type="text" onclick="">
+</body>
+
+</html>

@@ -84,6 +84,11 @@ let testObj = {
 function main(){
   testObj.getArr();
   testObj.takeSort();
+
+  
+  let a = 123;
+  console.log(a.tostring())
+  console.log(typeof a)
 }
 
 window.onload = main;
